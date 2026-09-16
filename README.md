@@ -3,69 +3,180 @@
 </p>
 
 <p align="center">
-  <a href="./Crafting_Interpreters_纯中文版.pdf">下载 650 页 PDF</a>
+  <a href="./Crafting_Interpreters_纯中文版.pdf">下载 PDF</a>
   ·
-  <a href="https://github.com/GuoYaxiang/craftinginterpreters_zh">查看中文翻译仓库</a>
+  <a href="https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftinginterpreters_zh/main/book.json">在线阅读中文翻译</a>
+  ·
+  <a href="https://github.com/GuoYaxiang/craftinginterpreters_zh">查看原翻译仓库</a>
   ·
   <a href="https://craftinginterpreters.com/">阅读英文原书</a>
 </p>
 
-# Crafting Interpreters 纯中文版 PDF
+# 手撸解释器教程（Crafting Interpreters 纯中文版 PDF）
 
-给想亲手理解“代码是怎样活起来”的人：这是《Crafting Interpreters》的中文 PDF 排版整理版，适合离线阅读、检索与打印。它从一门小小的 Lox 语言出发，带你走过扫描、解析、求值、编译、字节码与虚拟机的完整旅程。
+> 一个基于 [GuoYaxiang/craftinginterpreters_zh](https://github.com/GuoYaxiang/craftinginterpreters_zh) 中文翻译内容，由自动化排版流程生成的 PDF 阅读版。
 
-## 如果你也想知道，代码是怎样活起来的
+## 📖 项目简介
 
-解释器并不是遥远的黑箱。它可以从一枚 token、一个表达式、一次函数调用开始，被我们一点点拆开，再亲手装回去。
+本项目将原翻译仓库公开的 Markdown 内容重新整理，构建为一份适合长期阅读的中文 PDF 电子书。原仓库以 Markdown 源文件和在线阅读为主；本仓库提供独立的 PDF 发行文件，方便下载、保存、检索和打印。
 
-这份仓库把公开中文翻译内容整理成一份更适合长时间阅读的 PDF：让目录、代码、脚注和书签各就其位，把注意力还给那些真正值得琢磨的概念——以及每一个“原来如此”的瞬间。
+我们的目标很简单：把分散的章节整理成一本完整、可搜索、可跳转的中文技术书，让读者把更多注意力放在代码和概念本身，而不是排版和跳转上。
 
-## 你会走过的路线
+## 📚 关于本书
 
-```text
-Lox 源代码
-   │
-   ├─ jlox：扫描 → 解析 → 语法树 → 求值
-   │
-   └─ clox：字节码 → 编译器 → 虚拟机 → 优化
+《Crafting Interpreters》由 Bob Nystrom 编写，是一本从零实现解释器的技术书。全书从一门小型语言 Lox 开始，带着读者逐步实现两种不同路线的解释器：
+
+1. 树遍历解释器 `jlox`
+2. 字节码虚拟机解释器 `clox`
+
+书中循序讲解：
+
+- 词法分析与扫描器
+- 语法分析、递归下降解析与 AST
+- 表达式求值、运行时环境与状态
+- 函数、闭包、类与继承
+- 字节码、编译器与虚拟机
+- 垃圾回收与性能优化
+
+它不是只讲概念，也不是只堆代码。每一章都在前一章的基础上向前走，让抽象的语言机制逐渐变成可以运行的程序。
+
+## ✨ PDF 版本特点
+
+### 中文纯净阅读
+
+- 以中文正文为主，不插入英文原文对照段落
+- 保留代码、技术名称和必要的英文标识
+- 不为了中文化而改动代码语义
+
+例如，下面这些内容会原样保留：
+
+```java
+class Interpreter {
+}
 ```
 
-这条路线的美妙之处在于：每一步都不是凭空出现的。你会看见一门语言如何从字符变成 token，从 token 组织成语法树，再从解释执行走向编译、字节码与虚拟机。
+以及：
 
-## PDF 收录内容
+```text
+AST
+JVM
+GC
+Lox
+Parser
+Scanner
+```
 
-- 前言、解释器基础与 Lox 语言介绍
-- Tree-Walk Interpreter：第 1–13 章，使用 Java 实现 `jlox`
-- Bytecode Virtual Machine：第 14–30 章，使用 C 实现 `clox`
+### 📑 完整章节结构
+
+完整覆盖：
+
+- 第一部分：欢迎与解释器基础
+- 第二部分：树遍历解释器
+- 第三部分：字节码虚拟机
+- 第 1 章至第 30 章
+- 后记
 - 附录 I：Lox Grammar
 - 附录 II：Generated Syntax Tree Classes
-- 共 650 页；正文、代码块、脚注、目录与 PDF Bookmark 已统一排版并完成检查
 
-## 适合这样的你
+### 🔗 PDF 导航优化
 
-- 想系统理解解释器、编程语言或编译原理，而不是只记住几个名词
-- 想在没有网络的时候继续阅读，或把一段代码、一页脚注带到纸面上慢慢琢磨
-- 正在阅读英文原书，希望有一份中文材料作为对照入口
-- 喜欢沿着一个能运行起来的项目学习，看着抽象概念逐步变成真实代码
+PDF 内包含：
 
-## 从这里开始
+- 可点击目录
+- PDF 书签
+- 章节跳转
+- 内部引用跳转
+- 脚注跳转
 
-如果你准备好了，就从 [下载 PDF](./Crafting_Interpreters_纯中文版.pdf) 开始。从第 1 章开始，慢慢往前走，不必急着一次记住所有概念；让每个可运行的版本，带你比昨天更靠近“解释器到底是怎么工作的”这个答案。
+适合电脑、平板以及其他支持 PDF 的阅读设备。
 
-## 来源与致敬
+### 🎨 排版整理
 
-这份 PDF 的起点，来自 [GuoYaxiang/craftinginterpreters_zh](https://github.com/GuoYaxiang/craftinginterpreters_zh) 为中文读者提供的翻译与整理。感谢原作者与贡献者，让这条从 Lox 出发的学习路线有了中文入口；也感谢 Bob Nystrom 写下这本愿意陪读者一步步动手实现的书。
+针对技术书阅读场景进行了统一处理：
 
-本仓库只负责将公开中文内容整理为 PDF 发行文件，不替代、不冒充原项目，也不是原翻译仓库的官方发布渠道。原翻译仓库 README 标注采用 MIT License；使用、转载或再分发时，请保留原仓库出处，并自行遵守适用的许可证与版权要求。
+- A4 页面与中文正文排版
+- 代码块与图片布局优化
+- 章节分页与 Part 独立页面
+- 目录、脚注和页面结构整理
+- 生成 650 页完整 PDF，并完成基础结构检查
 
-相关项目：
+## 📥 下载
 
-- 中文翻译仓库：[GuoYaxiang/craftinginterpreters_zh](https://github.com/GuoYaxiang/craftinginterpreters_zh)
-- 英文原书：[Crafting Interpreters](https://craftinginterpreters.com/)
+当前版本可以直接下载仓库根目录中的：
 
-## 说明
+**[Crafting_Interpreters_纯中文版.pdf](./Crafting_Interpreters_纯中文版.pdf)**
 
-本仓库只发布 PDF 与阅读所需的说明，不包含原翻译仓库的 Markdown 源文件。如果你发现排版问题，欢迎在本仓库提出反馈；如果是翻译内容问题，建议回到原翻译仓库反馈。
+文件大小约 21.48 MB，共 650 页。后续如果发布 GitHub Release，会在这里补充对应的 Release 链接。
+
+## 📊 文件信息
+
+| 项目信息 | 内容 |
+| --- | --- |
+| 格式 | PDF |
+| 语言 | 中文 |
+| 页数 | 650 页 |
+| 内容来源 | [craftinginterpreters_zh](https://github.com/GuoYaxiang/craftinginterpreters_zh) |
+| 构建方式 | Markdown → HTML/CSS → Chromium PDF → 目录与书签后处理 |
+| 阅读方向 | 中文技术阅读 |
+
+## 🛠️ 构建流程摘要
+
+```text
+公开中文 Markdown
+        ↓
+章节解析与内容整理
+        ↓
+HTML / CSS 排版
+        ↓
+Chromium 生成 PDF
+        ↓
+目录、书签与内部链接后处理
+        ↓
+最终 PDF
+```
+
+当前仓库以发布阅读版为主，提供最终 PDF 和阅读说明，不包含原翻译仓库的 Markdown 源文件与完整构建脚本。因此，上面是构建过程的摘要，方便读者理解产物如何生成；仅克隆本仓库并不能直接一键复现 PDF。
+
+## ⚠️ 声明
+
+本项目：
+
+- 不是 Bob Nystrom 的官方 PDF
+- 不是原作者的官方发布版本
+- 不是原中文翻译项目的官方发布渠道
+
+本项目仅基于公开中文内容进行自动化整理、排版和 PDF 构建，方便学习者阅读，不替代原书或原翻译项目。
+
+## 📜 版权与许可
+
+原书内容版权归 Bob Nystrom 及相关权利人所有，中文翻译内容及原始项目贡献归原翻译仓库作者与贡献者所有。本仓库不主张拥有原书或原翻译内容的版权。
+
+原翻译仓库附有 [MIT License](https://github.com/GuoYaxiang/craftinginterpreters_zh/blob/main/LICENSE)。转载或再分发本 PDF 时，请保留原仓库出处，并同时遵守原书版权要求及适用的许可证条款。
+
+原项目：[GuoYaxiang/craftinginterpreters_zh](https://github.com/GuoYaxiang/craftinginterpreters_zh) · 原书：[Crafting Interpreters](https://craftinginterpreters.com/)
+
+## 🙏 致谢
+
+感谢：
+
+- Bob Nystrom 编写《Crafting Interpreters》
+- GuoYaxiang 及所有贡献者完成中文翻译与维护
+- [xieyuheng](https://github.com/xieyuheng) 提供在线阅读支持
+- 所有愿意分享知识、维护开源项目的人
+
+## ⭐ 如果这份 PDF 对你的学习有帮助
+
+欢迎：
+
+- 给项目点一个 Star
+- 提交排版问题
+- 提交构建改进建议
+
+如果是翻译内容问题，建议直接回到[原翻译仓库](https://github.com/GuoYaxiang/craftinginterpreters_zh)反馈；如果是 PDF 排版或导航问题，欢迎在本仓库提出 Issue。
+
+希望这份整理版，能让更多中文读者更轻松地走进解释器的世界：
+
+> 从一枚 token 开始，亲手走到一台真正会运行的虚拟机。
 
 <p align="center">
   <a href="https://github.com/openai/codex">
