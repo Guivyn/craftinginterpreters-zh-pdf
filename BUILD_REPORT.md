@@ -3,7 +3,7 @@
 - Status: **PASS**
 - Critical issues: **0**
 - Source repository commit: `0ed158ed4307f28a8e2feceee05e27cb1713969c`
-- Generated at (UTC): `2026-09-21T07:12:04.650611+00:00`
+- Generated at (UTC): `2026-09-21T07:53:51.407488+00:00`
 - Chapter entries: `36` (book.json order)
 - Final PDF pages: `693`
 - Final PDF size: `21.55 MB`
@@ -69,7 +69,7 @@
   "internal_links": 3,
   "unresolved_links": 0,
   "pages": 693,
-  "bytes": 22594980,
+  "bytes": 22594847,
   "mb": 21.55,
   "Part I": 8,
   "Chapter 1": 10,

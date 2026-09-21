@@ -106,7 +106,7 @@ PDF 内包含：
 
 **[Crafting_Interpreters_中文版.pdf](./Crafting_Interpreters_中文版.pdf)**
 
-文件大小约 21.55 MB，共 693 页。对应的 GitHub Release：[v1.0.0](https://github.com/Guivyn/craftinginterpreters-zh-pdf/releases/tag/v1.0.0)。
+文件大小约 21.55 MB，共 693 页。对应的 GitHub Release：[v1.0.1](https://github.com/Guivyn/craftinginterpreters-zh-pdf/releases/tag/v1.0.1)。
 
 ## 📊 文件信息
 
