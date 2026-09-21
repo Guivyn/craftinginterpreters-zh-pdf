@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="./assets/readme/hero.svg" width="100%" alt="Crafting Interpreters 纯中文版 PDF：从扫描、解析到字节码虚拟机的 650 页中文排版整理版">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Crafting Interpreters 中文版 PDF：从扫描、解析到字节码虚拟机的 693 页中文排版整理版">
 </p>
 
 <p align="center">
-  <a href="./Crafting_Interpreters_纯中文版.pdf">下载 PDF</a>
+  <a href="./Crafting_Interpreters_中文版.pdf">下载 PDF</a>
   ·
   <a href="https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftinginterpreters_zh/main/book.json">在线阅读中文翻译</a>
   ·
@@ -12,7 +12,7 @@
   <a href="https://craftinginterpreters.com/">阅读英文原书</a>
 </p>
 
-# 手撸解释器教程（Crafting Interpreters 纯中文版 PDF）
+# 手撸解释器教程（Crafting Interpreters 中文版 PDF）
 
 > 一个基于 [GuoYaxiang/craftinginterpreters_zh](https://github.com/GuoYaxiang/craftinginterpreters_zh) 中文翻译内容，由自动化排版流程生成的 PDF 阅读版。
 
@@ -98,15 +98,15 @@ PDF 内包含：
 - 代码块与图片布局优化
 - 章节分页与 Part 独立页面
 - 目录、脚注和页面结构整理
-- 生成 650 页完整 PDF，并完成基础结构检查
+- 生成 693 页完整 PDF，并完成基础结构检查
 
 ## 📥 下载
 
-当前版本可以直接下载仓库根目录中的：
+当前正式版本可以直接下载仓库根目录中的：
 
-**[Crafting_Interpreters_纯中文版.pdf](./Crafting_Interpreters_纯中文版.pdf)**
+**[Crafting_Interpreters_中文版.pdf](./Crafting_Interpreters_中文版.pdf)**
 
-文件大小约 21.48 MB，共 650 页。后续如果发布 GitHub Release，会在这里补充对应的 Release 链接。
+文件大小约 21.55 MB，共 693 页。对应的 GitHub Release：[v1.0.0](https://github.com/Guivyn/craftinginterpreters-zh-pdf/releases/tag/v1.0.0)。
 
 ## 📊 文件信息
 
@@ -114,7 +114,7 @@ PDF 内包含：
 | --- | --- |
 | 格式 | PDF |
 | 语言 | 中文 |
-| 页数 | 650 页 |
+| 页数 | 693 页 |
 | 内容来源 | [craftinginterpreters_zh](https://github.com/GuoYaxiang/craftinginterpreters_zh) |
 | 构建方式 | Markdown → HTML/CSS → Chromium PDF → 目录与书签后处理 |
 | 阅读方向 | 中文技术阅读 |
@@ -151,7 +151,7 @@ Chromium 生成 PDF
 
 原书内容版权归 Bob Nystrom 及相关权利人所有，中文翻译内容及原始项目贡献归原翻译仓库作者与贡献者所有。本仓库不主张拥有原书或原翻译内容的版权。
 
-原翻译仓库附有 [MIT License](https://github.com/GuoYaxiang/craftinginterpreters_zh/blob/main/LICENSE)。转载或再分发本 PDF 时，请保留原仓库出处，并同时遵守原书版权要求及适用的许可证条款。
+本整合版 PDF 的自动化构建脚本、样式与整合发布部分基于 GPL-3 许可。原翻译仓库附有 [MIT License](https://github.com/GuoYaxiang/craftinginterpreters_zh/blob/main/LICENSE)。转载或再分发本 PDF 时，请保留原仓库出处，并同时遵守原书版权要求及适用的许可证条款。
 
 原项目：[GuoYaxiang/craftinginterpreters_zh](https://github.com/GuoYaxiang/craftinginterpreters_zh) · 原书：[Crafting Interpreters](https://craftinginterpreters.com/)
 
